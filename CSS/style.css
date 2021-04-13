@@ -70,6 +70,9 @@ body {
 }
 
 .link {
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     text-decoration: none;
     color: inherit;
 }
@@ -79,18 +82,12 @@ body {
 
 .link:hover,
 .link:focus {
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--hover-color);
     fill: var(--hover-color);
 }
 
 .button:hover,
 .button:focus {
-    transition-property: background-color, color, box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     background-color: var(--hover-color);
     color: var(--main-bg-color);
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 
@@ -98,37 +95,19 @@ body {
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
 }
 
-.contacts-nav:hover,
-.contacts-nav:focus {
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--hover-color);
-    color: var(--hover-color);
-}
-
 .social-icons-link:hover,
 .social-icons-link:focus {
-    transition-property: background-color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--main-bg-color);
     background-color: var(--hover-color);
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
-    transition-property: fill, border-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     fill: var(--hover-color);
     border-color: var(--hover-color);
 }
 
 .example-item:hover {
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 
     0 4px 4px 0 rgba(0, 0, 0, 0.06), 
     0 1px 1px 0 rgba(0, 0, 0, 0.12);
@@ -143,6 +122,9 @@ body {
 }
 
 .button {
+    transition-property: background-color, color, box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     text-align: center;
     border: none;
     padding: 6px 22px;
@@ -456,6 +438,9 @@ body {
 }
 
 .social-icons {
+    transition-property: background-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -508,6 +493,9 @@ padding-bottom: 94px;
 }
 
 .example-item {
+    transition-property: box-shadow;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     margin-right: 30px;
     margin-bottom: 30px;
     width: 370px;
@@ -593,6 +581,9 @@ padding-bottom: 94px;
 }
 
 .clients-list-link {
+    transition-property: fill, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
     justify-content: center;
     align-items: center;
